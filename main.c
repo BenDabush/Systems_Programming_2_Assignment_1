@@ -30,37 +30,37 @@ int main()
             break;
 
         case 'B':
-            scanf("\n%d %d", &i, &j);
+            scanf("%d%d", &i, &j);
 
             if ((i < 0) || (MATRIX_SIZE <= i) || (j < 0) || (MATRIX_SIZE <= j))
             {
-                printf("\nFalse");
+                printf("False\n");
             }
             else if (0 < distanceMatrix[i][j])
             {
-                printf("\nTrue");
+                printf("True\n");
             }
             else
             {
-                printf("\nFalse");
+                printf("False\n");
             }
 
             break;
 
         case 'C':
-            scanf("\n%d %d", &i, &j);
+            scanf("%d%d", &i, &j);
 
             if ((i < 0) || (MATRIX_SIZE <= i) || (j < 0) || (MATRIX_SIZE <= j))
             {
-                printf("\n-1");
+                printf("-1\n");
             }
             else if (0 < distanceMatrix[i][j])
             {
-                printf("\n%d", distanceMatrix[i][j]);
+                printf("%d\n", distanceMatrix[i][j]);
             }
             else
             {
-                printf("\n-1");
+                printf("-1\n");
             }
             break;
 
